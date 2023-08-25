@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.btn{
+  @apply px-5 py-2 font-['Nunito'] bg-red text-light rounded-sm border border-red hover:shadow-sm hover:shadow-red hover:bg-light hover:text-red transition duration-300 cursor-pointer 
+}
+
+.btn-hover{
+  @apply px-5 py-2 font-['Nunito'] bg-light text-red rounded-sm border border-red  shadow-red hover:bg-red hover:text-light transition duration-300 cursor-pointer
+}
+.text {
+  @apply text-[15px] font-['Nunito'] text-dark
+}
+.link {
+  @apply text-[16px] font-[500] text-dark hover:text-hover
+}
+.icon {
+    @apply ml-2 text-[13px] font-light hidden md:block
+}
+.headBtn {
+  @apply px-8 py-2 text-[16px] bg-blue text-white rounded-sm
+}
+
+.dropdown{
+  @apply min-w-[200px] absolute top-6 left-0 right-0 px-4 py-3 shadow-md rounded-sm bg-light z-20
+}
+.category {
+  @apply w-full flex justify-start items-center gap-3 py-3 pl-4  text-[17px] text-blu border-b  border-slate-500 hover:bg-slate-100
+}
+
+.swiper {
+  @apply w-full  md:h-[420px] pt-2 
+}
+.swiper-slide{
+  @apply w-full h-auto 
+}
+
+.bigNunito {
+  @apply text-xl font-['Nunito']  text-dark uppercase
+}
+.mdNav {
+  @apply w-[300px] fixed bottom-0 right-[100%] top-0 flex flex-col px-4 py-3 gap-4 bg-light z-20
+}
+.mdNav.open{
+  @apply transition right-0
+}
+
+.mdNav.close{
+  @apply transition right-[100%] 
+}
+
+.headerText {
+  @apply  text-3xl text-black font-medium uppercase
+}
+
+.input {
+  @apply px-4 py-[10px] text-[17px] font-['nunito'] text-dark border border-gray-400 focus:outline-none rounded-sm focus:border-red
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* reponsive designs */
+@media (min-width:768px) {
+  .mdNav {
+  @apply w-full relative bottom-0 left-0 top-0 flex flex-row px-4 py-3 gap-4 bg-light z-20
+  }
+}
+
+@media (min-width:1024px) {
+  .largeNav {
+    @apply relative top-0 right-28 flex flex-row bg-transparent 
+  }
+  .largePNav {
+    @apply relative top-0 lg:block
+  }
+}
