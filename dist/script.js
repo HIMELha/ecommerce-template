@@ -1,5 +1,3 @@
-import './styles.css';
-
 const mdNav = document.querySelector('.mdNav');
 mdNavBtn = document.querySelector('#mdNavBtn');
 btnClose = document.querySelector('#btnClose');
